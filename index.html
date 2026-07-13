@@ -303,6 +303,8 @@ h1,h2,h3{font-family:var(--display);}
 .modal-summary{margin-top:26px;background:var(--navy);border-radius:10px;padding:22px 24px;}
 .modal-summary h4{font-family:var(--mono);font-size:.75rem;letter-spacing:.1em;text-transform:uppercase;color:var(--olive);margin-bottom:16px;}
 .summary-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px;}
+.summary-item.full{grid-column:1 / -1;}
+.summary-item .flap.range span{font-size:clamp(1.05rem,2vw,1.4rem);}
 .summary-item label{display:block;font-size:.72rem;color:#9fb0c2;margin-bottom:8px;}
 .summary-item .flap{background:#0d1b2a;}
 .summary-item .flap.big span{font-size:clamp(1.5rem,2.6vw,2rem);}
@@ -813,6 +815,11 @@ h1,h2,h3{font-family:var(--display);}
           <label>Cuota que te quedará</label>
           <div class="flap money big"><span id="sumQuota">—</span></div>
           <small id="sumQuotaNote"></small>
+        </div>
+        <div class="summary-item full">
+          <label>Ingresos estimados por alquiler</label>
+          <div class="flap money big range"><span>1.200€ – 1.400€/mes</span></div>
+          <small>Promedio orientativo, en función de la unidad</small>
         </div>
       </div>
     </div>
