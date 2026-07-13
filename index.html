@@ -200,6 +200,8 @@ h1,h2,h3{font-family:var(--display);}
 .fm-coord{font-family:var(--mono);font-size:.68rem;color:var(--olive);letter-spacing:.03em;}
 .realmap-frame{width:100%;aspect-ratio:800/380;border-radius:6px;overflow:hidden;border:1px solid #223146;filter:saturate(.9) brightness(.96);}
 .realmap-frame iframe{width:100%;height:100%;display:block;}
+.realmap-frame video{width:100%;height:100%;display:block;object-fit:cover;background:#000;}
+.zonavideo-block{margin-bottom:22px;}
 .flightmap-foot{display:flex;align-items:center;justify-content:space-between;margin-top:10px;font-family:var(--mono);font-size:.66rem;color:#7488a0;letter-spacing:.04em;}
 .fm-dots{flex:1;text-align:center;color:#3a4f66;letter-spacing:.3em;}
 @media (max-width:760px){
@@ -524,6 +526,18 @@ h1,h2,h3{font-family:var(--display);}
   <div class="wrap">
     <div class="kicker reveal"><span class="coordtag">04</span>EL EMPLAZAMIENTO</div>
     <h2 class="scene-title reveal">Valencia crece.<br>El Grao, más.</h2>
+
+    <div class="realmap zonavideo-block reveal">
+      <div class="flightmap-head">
+        <span class="fm-tag"><span class="dot-live dot-route"></span>VUELO SOBRE EL BARRIO</span>
+      </div>
+      <div class="realmap-frame">
+        <video class="zonavideo-el" controls muted playsinline preload="metadata" poster="media/ja4-zona-poster.jpg">
+          <source src="media/ja4-zona-video.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="flightmap-foot"><span>El Grao · Poblats Marítims</span><span class="fm-dots">· · · · · · · · · · · ·</span><span>Valencia</span></div>
+    </div>
 
     <div class="realmap reveal">
       <div class="flightmap-head">
